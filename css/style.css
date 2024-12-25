@@ -1,0 +1,53 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+  }
+  
+  /* Counter styling */
+  .counter {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .counter:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .counter {
+      font-size: 1.5rem;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .counter {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+  }
+  
